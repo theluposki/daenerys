@@ -22,6 +22,11 @@ export default () => {
           lastname: user.lastname,
           email: user.email,
           password: hash,
+          rules: {
+            create: {
+              name: "user"
+            }
+          }
         },
       });
 
